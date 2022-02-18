@@ -44,7 +44,7 @@ if (fs.existsSync('server.key') && fs.existsSync('server.cert')) {
     console.log('HTTPS Listening: 49832')
   })
 } else {
-  var server = app.listen(process.env.PORT || 5000, function () {
+  var server = app.listen(process.env.PORT || 49832, function () {
     console.log("HTTP Listening on port:", server.address().port);
   });
 }
